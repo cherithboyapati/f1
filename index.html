@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formula 1 Racing - Teams, Drivers, Cars & Achievements">
+    <title>F1 Racing — Official Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-text">F1</div>
+            </a>
+
+            <nav class="navbar">
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#teams" class="nav-link">Teams</a></li>
+                    <li><a href="#standings" class="nav-link">Standings</a></li>
+                    <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                    <li><a href="#cars" class="nav-link">Cars</a></li>
+                    <li><a href="#stats" class="nav-link">Statistics</a></li>
+                    <li><a href="#fan-id" class="nav-link">Fan Pass</a></li>
+                </ul>
+            </nav>
+
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">FORMULA 1</h1>
+            <p class="hero-subtitle">The pinnacle of motorsport excellence</p>
+            <a href="#news" class="btn btn-hero" style="text-decoration:none; display:inline-block;">Explore Season
+                2026</a>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section news-section">
+        <div class="container">
+            <h2 class="section-title">Season 2026 Headlines</h2>
+            <div class="news-grid">
+                <a href="https://www.audi-mediacenter.com/en/press-releases/audi-enters-formula-1-14736"
+                    class="news-card" target="_blank" rel="noopener noreferrer"
+                    style="text-decoration:none; color:inherit;">
+                    <div class="news-image news-audi"></div>
+                    <div class="news-content">
+                        <span class="news-tag">Teams</span>
+                        <h4>Audi Enters Formula 1</h4>
+                        <p>The German automotive giant officially joins the grid as a works team, taking over Sauber
+                            with their own power unit.</p>
+                    </div>
+                </a>
+                <a href="https://www.fia.com/news/fia-publishes-2026-formula-1-technical-regulations" class="news-card"
+                    target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:inherit;">
+                    <div class="news-image news-regs"></div>
+                    <div class="news-content">
+                        <span class="news-tag">Regulations</span>
+                        <h4>New Era of Agility</h4>
+                        <p>Cars are lighter, shorter, and narrower for 2026. Active Aerodynamics replace DRS for a more
+                            dynamic racing experience.</p>
+                    </div>
+                </a>
+                <a href="https://www.formula1.com/en/latest/article/more-efficient-less-fuel-and-carbon-net-zero-7-things-you-need-to-know-about.17F0l2f6K6X6Z6X6Z6X6Z6"
+                    class="news-card" target="_blank" rel="noopener noreferrer"
+                    style="text-decoration:none; color:inherit;">
+                    <div class="news-image news-engine"></div>
+                    <div class="news-content">
+                        <span class="news-tag">Technology</span>
+                        <h4>Sustainable Power</h4>
+                        <p>New power units feature a 50/50 split between electric and internal combustion power, running
+                            on 100% sustainable fuel.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standings Hub (2026 Projection) -->
+    <section id="standings" class="section standings-section">
+        <div class="container">
+            <h2 class="section-title">2026 Championship Pulse</h2>
+            <div class="standings-flex">
+                <!-- Driver Standings -->
+                <div class="standing-col">
+                    <div class="standing-header">
+                        <h3>Driver Standings</h3>
+                        <span class="season-tag">2026 Leaderboard</span>
+                    </div>
+                    <div class="standing-list">
+                        <div class="standing-row" style="--team-accent: #e8003d">
+                            <span class="rank">1</span>
+                            <div class="driver-info-mini">
+                                <span class="name">Charles Leclerc</span>
+                                <span class="team">Ferrari</span>
+                            </div>
+                            <span class="pts">42</span>
+                        </div>
+                        <div class="standing-row" style="--team-accent: #1e3050">
+                            <span class="rank">2</span>
+                            <div class="driver-info-mini">
+                                <span class="name">Max Verstappen</span>
+                                <span class="team">Red Bull Racing</span>
+                            </div>
+                            <span class="pts">38</span>
+                        </div>
+                        <div class="standing-row" style="--team-accent: #ff8700">
+                            <span class="rank">3</span>
+                            <div class="driver-info-mini">
+                                <span class="name">Lando Norris</span>
+                                <span class="team">McLaren</span>
+                            </div>
+                            <span class="pts">32</span>
+                        </div>
+                        <div class="standing-row" style="--team-accent: #e8003d">
+                            <span class="rank">4</span>
+                            <div class="driver-info-mini">
+                                <span class="name">Lewis Hamilton</span>
+                                <span class="team">Ferrari</span>
+                            </div>
+                            <span class="pts">28</span>
+                        </div>
+                        <div class="standing-row" style="--team-accent: #00d4be">
+                            <span class="rank">5</span>
+                            <div class="driver-info-mini">
+                                <span class="name">George Russell</span>
+                                <span class="team">Mercedes</span>
+                            </div>
+                            <span class="pts">18</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Race Card -->
+                <div class="standing-col-featured">
+                    <div class="next-race-card">
+                        <div class="next-race-overlay"></div>
+                        <div class="next-race-content">
+                            <span class="status-live">COMING UP</span>
+                            <h3>Grand Prix of Australia</h3>
+                            <p>Albert Park Circuit</p>
+                            <div class="countdown-timer">
+                                <div class="time-unit">
+                                    <span class="num" id="days">00</span>
+                                    <span class="label">DAYS</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="num" id="hours">00</span>
+                                    <span class="label">HRS</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="num" id="mins">00</span>
+                                    <span class="label">MINS</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="num" id="secs">00</span>
+                                    <span class="label">SECS</span>
+                                </div>
+                            </div>
+                            <a href="#schedule" class="btn btn-hero"
+                                style="font-size: 0.8rem; padding: 0.5rem 1rem;">Race Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="section schedule-section">
+        <div class="container">
+
+            <h2 class="section-title">2026 Race Calendar</h2>
+
+
+
+            <div class="schedule-track">
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackmelbournedetailed.webp"
+                    data-track-name="Albert Park Circuit" data-track-length="5.278 km" data-track-laps="58"
+                    data-track-distance="306.124 km" data-track-record="1:19.813 (Leclerc, 2024)">
+                    <div class="round-badge">R1</div>
+                    <div class="date-box">
+                        <span class="month">MAR</span>
+                        <span class="day">08</span>
+                    </div>
+                    <h4>Australian GP</h4>
+                    <p class="circuit">Albert Park</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackshanghaidetailed.webp"
+                    data-track-name="Shanghai International Circuit" data-track-length="5.451 km" data-track-laps="56"
+                    data-track-distance="305.066 km" data-track-record="1:32.238 (Schumacher, 2004)">
+                    <div class="round-badge">R2</div>
+                    <div class="date-box">
+                        <span class="month">MAR</span>
+                        <span class="day">15</span>
+                    </div>
+                    <h4>Chinese GP</h4>
+                    <p class="circuit">Shanghai</p>
+                    <span class="sprint-badge">Sprint</span>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026tracksuzukadetailed.webp"
+                    data-track-name="Suzuka Circuit" data-track-length="5.807 km" data-track-laps="53"
+                    data-track-distance="307.471 km" data-track-record="1:30.983 (Hamilton, 2019)">
+                    <div class="round-badge">R3</div>
+                    <div class="date-box">
+                        <span class="month">MAR</span>
+                        <span class="day">29</span>
+                    </div>
+                    <h4>Japanese GP</h4>
+                    <p class="circuit">Suzuka</p>
+                </div>
+                <!-- Add more races here as needed, continuing the pattern for all 24 if space permits, or highlighting key races -->
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026tracksakhirdetailed.webp"
+                    data-track-name="Bahrain International Circuit" data-track-length="5.412 km" data-track-laps="57"
+                    data-track-distance="308.238 km" data-track-record="1:31.447 (De la Rosa, 2005)">
+                    <div class="round-badge">R4</div>
+                    <div class="date-box">
+                        <span class="month">APR</span>
+                        <span class="day">12</span>
+                    </div>
+                    <h4>Bahrain GP</h4>
+                    <p class="circuit">Sakhir</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackjeddahdetailed.webp"
+                    data-track-name="Jeddah Corniche Circuit" data-track-length="6.174 km" data-track-laps="50"
+                    data-track-distance="308.450 km" data-track-record="1:30.734 (Hamilton, 2021)">
+                    <div class="round-badge">R5</div>
+                    <div class="date-box">
+                        <span class="month">APR</span>
+                        <span class="day">19</span>
+                    </div>
+                    <h4>Saudi Arabian GP</h4>
+                    <p class="circuit">Jeddah</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackmiamidetailed.webp"
+                    data-track-name="Miami International Autodrome" data-track-length="5.412 km" data-track-laps="57"
+                    data-track-distance="308.326 km" data-track-record="1:29.708 (Verstappen, 2023)">
+                    <div class="round-badge">R6</div>
+                    <div class="date-box">
+                        <span class="month">MAY</span>
+                        <span class="day">03</span>
+                    </div>
+                    <h4>Miami GP</h4>
+                    <p class="circuit">Miami</p>
+                    <span class="sprint-badge">Sprint</span>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackmontrealdetailed.webp"
+                    data-track-name="Circuit Gilles Villeneuve" data-track-length="4.361 km" data-track-laps="70"
+                    data-track-distance="305.270 km" data-track-record="1:13.078 (Bottas, 2019)">
+                    <div class="round-badge">R7</div>
+                    <div class="date-box">
+                        <span class="month">MAY</span>
+                        <span class="day">24</span>
+                    </div>
+                    <h4>Canadian GP</h4>
+                    <p class="circuit">Montreal</p>
+                    <span class="sprint-badge">Sprint</span>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackmontecarlodetailed.webp"
+                    data-track-name="Circuit de Monaco" data-track-length="3.337 km" data-track-laps="78"
+                    data-track-distance="260.286 km" data-track-record="1:12.909 (Hamilton, 2021)">
+                    <div class="round-badge">R8</div>
+                    <div class="date-box">
+                        <span class="month">JUN</span>
+                        <span class="day">07</span>
+                    </div>
+                    <h4>Monaco GP</h4>
+                    <p class="circuit">Monaco</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackcatalunyadetailed.webp"
+                    data-track-name="Circuit de Barcelona-Catalunya" data-track-length="4.657 km" data-track-laps="66"
+                    data-track-distance="307.236 km" data-track-record="1:16.330 (Verstappen, 2023)">
+                    <div class="round-badge">R9</div>
+                    <div class="date-box">
+                        <span class="month">JUN</span>
+                        <span class="day">14</span>
+                    </div>
+                    <h4>Spanish GP</h4>
+                    <p class="circuit">Barcelona</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackspielbergdetailed.webp"
+                    data-track-name="Red Bull Ring" data-track-length="4.318 km" data-track-laps="71"
+                    data-track-distance="306.452 km" data-track-record="1:05.619 (Sainz, 2020)">
+                    <div class="round-badge">R10</div>
+                    <div class="date-box">
+                        <span class="month">JUN</span>
+                        <span class="day">28</span>
+                    </div>
+                    <h4>Austrian GP</h4>
+                    <p class="circuit">Spielberg</p>
+                    <span class="sprint-badge">Sprint</span>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026tracksilverstonedetailed.webp"
+                    data-track-name="Silverstone Circuit" data-track-length="5.891 km" data-track-laps="52"
+                    data-track-distance="306.198 km" data-track-record="1:27.097 (Verstappen, 2020)">
+                    <div class="round-badge">R11</div>
+                    <div class="date-box">
+                        <span class="month">JUL</span>
+                        <span class="day">05</span>
+                    </div>
+                    <h4>British GP</h4>
+                    <p class="circuit">Silverstone</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackspafrancorchampsdetailed.webp"
+                    data-track-name="Circuit de Spa-Francorchamps" data-track-length="7.004 km" data-track-laps="44"
+                    data-track-distance="308.052 km" data-track-record="1:44.701 (Perez, 2024)">
+                    <div class="round-badge">R12</div>
+                    <div class="date-box">
+                        <span class="month">JUL</span>
+                        <span class="day">19</span>
+                    </div>
+                    <h4>Belgian GP</h4>
+                    <p class="circuit">Spa-Francorchamps</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackhungaroringdetailed.webp"
+                    data-track-name="Hungaroring" data-track-length="4.381 km" data-track-laps="70"
+                    data-track-distance="306.630 km" data-track-record="1:16.627 (Hamilton, 2020)">
+                    <div class="round-badge">R13</div>
+                    <div class="date-box">
+                        <span class="month">JUL</span>
+                        <span class="day">26</span>
+                    </div>
+                    <h4>Hungarian GP</h4>
+                    <p class="circuit">Budapest</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackzandvoortdetailed.webp"
+                    data-track-name="Circuit Zandvoort" data-track-length="4.259 km" data-track-laps="72"
+                    data-track-distance="306.587 km" data-track-record="1:11.097 (Hamilton, 2021)">
+                    <div class="round-badge">R14</div>
+                    <div class="date-box">
+                        <span class="month">AUG</span>
+                        <span class="day">23</span>
+                    </div>
+                    <h4>Dutch GP</h4>
+                    <p class="circuit">Zandvoort</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackmonzadetailed.webp"
+                    data-track-name="Autodromo Nazionale Monza" data-track-length="5.793 km" data-track-laps="53"
+                    data-track-distance="306.720 km" data-track-record="1:21.046 (Barrichello, 2004)">
+                    <div class="round-badge">R15</div>
+                    <div class="date-box">
+                        <span class="month">SEP</span>
+                        <span class="day">06</span>
+                    </div>
+                    <h4>Italian GP</h4>
+                    <p class="circuit">Monza</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackmadringdetailed.webp"
+                    data-track-name="Madrid Street Circuit" data-track-length="5.474 km" data-track-laps="57"
+                    data-track-distance="308.524 km" data-track-record="1:34.4 (Projected)">
+                    <div class="round-badge">R16</div>
+                    <div class="date-box">
+                        <span class="month">SEP</span>
+                        <span class="day">13</span>
+                    </div>
+                    <h4>Madrid GP</h4>
+                    <p class="circuit">Madrid Street Circuit</p>
+                    <span class="new-event-badge">NEW</span>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackbakudetailed.webp"
+                    data-track-name="Baku City Circuit" data-track-length="6.003 km" data-track-laps="51"
+                    data-track-distance="306.049 km" data-track-record="1:43.009 (Leclerc, 2019)">
+                    <div class="round-badge">R17</div>
+                    <div class="date-box">
+                        <span class="month">SEP</span>
+                        <span class="day">26</span>
+                    </div>
+                    <h4>Azerbaijan GP</h4>
+                    <p class="circuit">Baku</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026tracksingaporedetailed.webp"
+                    data-track-name="Marina Bay Street Circuit" data-track-length="4.940 km" data-track-laps="62"
+                    data-track-distance="305.337 km" data-track-record="1:33.808 (Hamilton, 2025)">
+                    <div class="round-badge">R18</div>
+                    <div class="date-box">
+                        <span class="month">OCT</span>
+                        <span class="day">11</span>
+                    </div>
+                    <h4>Singapore GP</h4>
+                    <p class="circuit">Marina Bay</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackaustindetailed.webp"
+                    data-track-name="Circuit of The Americas" data-track-length="5.513 km" data-track-laps="56"
+                    data-track-distance="308.405 km" data-track-record="1:36.169 (Leclerc, 2019)">
+                    <div class="round-badge">R19</div>
+                    <div class="date-box">
+                        <span class="month">OCT</span>
+                        <span class="day">25</span>
+                    </div>
+                    <h4>United States GP</h4>
+                    <p class="circuit">Austin</p>
+                    <span class="sprint-badge">Sprint</span>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackmexicocitydetailed.webp"
+                    data-track-name="Autódromo Hermanos Rodríguez" data-track-length="4.304 km" data-track-laps="71"
+                    data-track-distance="305.354 km" data-track-record="1:17.774 (Bottas, 2021)">
+                    <div class="round-badge">R20</div>
+                    <div class="date-box">
+                        <span class="month">NOV</span>
+                        <span class="day">01</span>
+                    </div>
+                    <h4>Mexico City GP</h4>
+                    <p class="circuit">Mexico City</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackinterlagosdetailed.webp"
+                    data-track-name="Autódromo Jose Carlos Pace" data-track-length="4.309 km" data-track-laps="71"
+                    data-track-distance="305.879 km" data-track-record="1:10.540 (Bottas, 2018)">
+                    <div class="round-badge">R21</div>
+                    <div class="date-box">
+                        <span class="month">NOV</span>
+                        <span class="day">08</span>
+                    </div>
+                    <h4>São Paulo GP</h4>
+                    <p class="circuit">Interlagos</p>
+                    <span class="sprint-badge">Sprint</span>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026tracklasvegasdetailed.webp"
+                    data-track-name="Las Vegas Strip Circuit" data-track-length="6.201 km" data-track-laps="50"
+                    data-track-distance="309.958 km" data-track-record="1:34.876 (Norris, 2024)">
+                    <div class="round-badge">R22</div>
+                    <div class="date-box">
+                        <span class="month">NOV</span>
+                        <span class="day">21</span>
+                    </div>
+                    <h4>Las Vegas GP</h4>
+                    <p class="circuit">Las Vegas</p>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026tracklusaildetailed.webp"
+                    data-track-name="Lusail International Circuit" data-track-length="5.419 km" data-track-laps="57"
+                    data-track-distance="308.611 km" data-track-record="1:24.319 (Verstappen, 2023)">
+                    <div class="round-badge">R23</div>
+                    <div class="date-box">
+                        <span class="month">NOV</span>
+                        <span class="day">29</span>
+                    </div>
+                    <h4>Qatar GP</h4>
+                    <p class="circuit">Lusail</p>
+                    <span class="sprint-badge">Sprint</span>
+                </div>
+                <div class="schedule-card"
+                    data-track-image="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000000/common/f1/2026/track/2026trackyasmarinacircuitdetailed.webp"
+                    data-track-name="Yas Marina Circuit" data-track-length="5.281 km" data-track-laps="58"
+                    data-track-distance="306.183 km" data-track-record="1:26.103 (Verstappen, 2021)">
+                    <div class="round-badge">R24</div>
+                    <div class="date-box">
+                        <span class="month">DEC</span>
+                        <span class="day">06</span>
+                    </div>
+                    <h4>Abu Dhabi GP</h4>
+                    <p class="circuit">Yas Marina</p>
+                </div>
+            </div>
+        </div>
+        <div class="schedule-controls">
+            <span>&larr; Scroll for more • Click card for map &rarr;</span>
+        </div>
+
+        <!-- Track Modal -->
+        <div id="trackModal" class="track-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3 id="modalTrackName">Track Name</h3>
+                <div class="modal-body">
+                    <div class="modal-image-container">
+                        <img id="modalTrackImage" src="" alt="Track Layout">
+                    </div>
+                    <div class="modal-info">
+                        <div class="track-stats-grid">
+                            <div class="track-stat-item">
+                                <span class="track-stat-label">Circuit Length</span>
+                                <span id="statLength" class="track-stat-value">-</span>
+                            </div>
+                            <div class="track-stat-item">
+                                <span class="track-stat-label">Laps</span>
+                                <span id="statLaps" class="track-stat-value">-</span>
+                            </div>
+                            <div class="track-stat-item">
+                                <span class="track-stat-label">Race Distance</span>
+                                <span id="statDistance" class="track-stat-value">-</span>
+                            </div>
+                            <div class="track-stat-item">
+                                <span class="track-stat-label">Lap Record</span>
+                                <span id="statRecord" class="track-stat-value">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section id="teams" class="section teams-section">
+        <div class="container">
+            <h2 class="section-title">Racing Teams 2026</h2>
+            <div class="teams-grid">
+                <!-- Ferrari -->
+                <div class="team-card" style="--team-color: #e8003d">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://logos-world.net/wp-content/uploads/2020/07/Ferrari-Scuderia-Logo-700x394.png"
+                                alt="Ferrari Logo" class="logo-img">
+                        </span>
+                        <h3>Ferrari</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> Italy</p>
+                        <p><strong>Founded:</strong> 1947</p>
+                        <p><strong>Championships:</strong> 16</p>
+                        <p><strong>Titles:</strong> 249</p>
+                    </div>
+                    <div class="team-drivers">
+                        <span class="driver-badge" data-driver="charles-leclerc" data-name="Charles Leclerc"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/leclerc"
+                            data-wins="5" data-poles="24" data-championships="0" data-aggr="92" data-tyre="88"
+                            data-wet="85">Charles Leclerc</span>
+                        <span class="driver-badge" data-driver="lewis-hamilton" data-name="Lewis Hamilton"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/hamilton"
+                            data-wins="103" data-poles="103" data-championships="7" data-aggr="85" data-tyre="98"
+                            data-wet="96">Lewis Hamilton</span>
+                    </div>
+                    <div class="driver-dropdown"></div>
+                </div>
+
+                <!-- Red Bull Racing -->
+                <div class="team-card" style="--team-color: #1e3050">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://images.seeklogo.com/logo-png/62/2/oracle-red-bull-racing-logo-png_seeklogo-622849.png"
+                                alt="Red Bull Racing Logo" class="logo-img">
+                        </span>
+                        <h3>Red Bull Racing</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> Austria</p>
+                        <p><strong>Founded:</strong> 2005</p>
+                        <p><strong>Championships:</strong> 5</p>
+                        <p><strong>Titles:</strong> 84</p>
+                    </div>
+                    <div class="team-drivers">
+                        <span class="driver-badge" data-driver="max-verstappen" data-name="Max Verstappen"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/verstappen"
+                            data-wins="62" data-poles="36" data-championships="3" data-aggr="99" data-tyre="92"
+                            data-wet="98">Max Verstappen</span>
+                        <span class="driver-badge" data-driver="isack-hadjar" data-name="Isack Hadjar"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/hadjar"
+                            data-wins="0" data-poles="0" data-championships="0" data-aggr="88" data-tyre="75"
+                            data-wet="80">Isack Hadjar</span>
+                    </div>
+                    <div class="driver-dropdown"></div>
+                </div>
+
+                <!-- Mercedes -->
+                <div class="team-card" style="--team-color: #00d4be">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mercedes_AMG_Petronas_F1_Logo.svg/1280px-Mercedes_AMG_Petronas_F1_Logo.svg.png"
+                                alt="Mercedes Logo" class="logo-img">
+                        </span>
+                        <h3>Mercedes</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> Germany</p>
+                        <p><strong>Founded:</strong> 1954</p>
+                        <p><strong>Championships:</strong> 8</p>
+                        <p><strong>Titles:</strong> 216</p>
+                    </div>
+                    <div class="team-drivers">
+                        <span class="driver-badge" data-driver="george-russell" data-name="George Russell"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/russell"
+                            data-wins="2" data-poles="6" data-championships="0" data-aggr="90" data-tyre="82"
+                            data-wet="85">George Russell</span>
+                        <span class="driver-badge" data-driver="kimi-antonelli" data-name="Andrea Kimi Antonelli"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/antonelli"
+                            data-wins="0" data-poles="0" data-championships="0" data-aggr="95" data-tyre="80"
+                            data-wet="82">Andrea Kimi Antonelli</span>
+                    </div>
+                    <div class="driver-dropdown"></div>
+                </div>
+
+                <!-- McLaren -->
+                <div class="team-card" style="--team-color: #ff8700">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtn8E6_TwI_QsqH86VlhiOk8VDTDtJRvotL9CXryKU0PB47H5XjLZK1tI3ZgP_"
+                                alt="McLaren Logo" class="logo-img">
+                        </span>
+                        <h3>McLaren</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> United Kingdom</p>
+                        <p><strong>Founded:</strong> 1963</p>
+                        <p><strong>Championships:</strong> 8</p>
+                        <p><strong>Titles:</strong> 188</p>
+                    </div>
+                    <div class="team-drivers">
+                        <span class="driver-badge" data-driver="lando-norris" data-name="Lando Norris"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/norris"
+                            data-wins="5" data-poles="3" data-championships="0" data-aggr="88" data-tyre="92"
+                            data-wet="94">Lando Norris</span>
+                        <span class="driver-badge" data-driver="oscar-piastri" data-name="Oscar Piastri"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/piastri"
+                            data-wins="2" data-poles="0" data-championships="0" data-aggr="85" data-tyre="95"
+                            data-wet="90">Oscar Piastri</span>
+                    </div>
+                    <div class="driver-dropdown"></div>
+                </div>
+
+                <!-- Audi F1 Team -->
+                <div class="team-card" style="--team-color: #C3002F">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Audi-Logo_2016.svg/1200px-Audi-Logo_2016.svg.png"
+                                alt="Audi F1 Logo" class="logo-img">
+                        </span>
+                        <h3>Audi F1 Team</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> Germany</p>
+                        <p><strong>Founded:</strong> 2026</p>
+                        <p><strong>Championships:</strong> 0</p>
+                        <p><strong>Titles:</strong> 0</p>
+                    </div>
+                    <div class="team-drivers">
+                        <span class="driver-badge" data-driver="nico-hulkenberg" data-name="Nico Hülkenberg"
+                            data-image="https://f1-insider.com/wp-content/uploads/2023/06/Formel-1-Nico-Huelkenberg-2023-Portrait-1024x683.jpg"
+                            data-wins="0" data-poles="1" data-championships="0">Nico Hülkenberg</span>
+                        <span class="driver-badge" data-driver="gabriel-bortoleto" data-name="Gabriel Bortoleto"
+                            data-image="https://f1only.fr/wp-content/uploads/2024/11/Gabriel-Bortoleto-3-2048x1365.jpg"
+                            data-wins="0" data-poles="0" data-championships="0">Gabriel Bortoleto</span>
+                    </div>
+                    <div class="driver-dropdown"></div>
+                </div>
+
+                <!-- Aston Martin -->
+                <div class="team-card" style="--team-color: #006f62">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/de/thumb/b/bf/Logo_Aston_Martin_F1_Team.jpg/500px-Logo_Aston_Martin_F1_Team.jpg"
+                                alt="Aston Martin Logo" class="logo-img">
+                        </span>
+                        <h3>Aston Martin</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> United Kingdom</p>
+                        <p><strong>Founded:</strong> 2018</p>
+                        <p><strong>Championships:</strong> 0</p>
+                        <p><strong>Titles:</strong> 1</p>
+                    </div>
+                    <div class="team-drivers">
+                        <span class="driver-badge" data-driver="fernando-alonso" data-name="Fernando Alonso"
+                            data-image="images/fernando_alonso.png" data-wins="32" data-poles="32"
+                            data-championships="2">Fernando Alonso</span>
+                        <span class="driver-badge" data-driver="lance-stroll" data-name="Lance Stroll"
+                            data-image="images/lance_stroll.png" data-wins="0" data-poles="0"
+                            data-championships="0">Lance Stroll</span>
+                    </div>
+                    <div class="driver-dropdown"></div>
+                </div>
+
+                <!-- Alpine -->
+                <div class="team-card" style="--team-color: #0093d0">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Logo_of_alpine_f1_team_2022.png/330px-Logo_of_alpine_f1_team_2022.png"
+                                alt="Alpine F1 Logo" class="logo-img">
+                        </span>
+                        <h3>Alpine F1</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> France</p>
+                        <p><strong>Founded:</strong> 2021</p>
+                        <p><strong>Championships:</strong> 2</p>
+                        <p><strong>Titles:</strong> 40</p>
+                        <div class="team-drivers">
+                            <span class="driver-badge" data-driver="pierre-gasly" data-name="Pierre Gasly"
+                                data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/gasly"
+                                data-wins="1" data-poles="0" data-championships="0">Pierre Gasly</span>
+                            <span class="driver-badge" data-driver="franco-colapinto" data-name="Franco Colapinto"
+                                data-image="https://sp.yimg.com/ib/th/id/OIP.GMZvi_HOWwhCs7foV0C_rwHaHa?pid=Api&w=148&h=148&c=7&dpr=2&rs=1"
+                                data-wins="0" data-poles="0" data-championships="0">Franco Colapinto</span>
+                        </div>
+                        <div class="driver-dropdown"></div>
+                    </div>
+                </div>
+
+                <!-- Cadillac F1 Team -->
+                <div class="team-card" style="--team-color: #D4AF37">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://gmauthority.com/blog/wp-content/uploads/2025/05/Cadillac-F1-Team-logo-reval-001.jpg"
+                                alt="Cadillac F1 Logo" class="logo-img">
+                        </span>
+                        <h3>Cadillac F1 Team</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> USA</p>
+                        <p><strong>Founded:</strong> 2026</p>
+                        <p><strong>Championships:</strong> 0</p>
+                        <p><strong>Titles:</strong> 0</p>
+                    </div>
+                    <div class="team-drivers">
+                        <span class="driver-badge" data-driver="sergio-perez" data-name="Sergio Pérez"
+                            data-image="https://elceo.com/wp-content/uploads/2024/10/sergio-checo-perez-patrocinios-formula-1.jpg"
+                            data-wins="6" data-poles="3" data-championships="0">Sergio Pérez</span>
+                        <span class="driver-badge" data-driver="valtteri-bottas" data-name="Valtteri Bottas"
+                            data-image="https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/bottas.jpg.img.1536.high.jpg"
+                            data-wins="10" data-poles="20" data-championships="0">Valtteri Bottas</span>
+                    </div>
+                    <div class="driver-dropdown"></div>
+                </div>
+
+                <!-- Haas F1 Team -->
+                <div class="team-card" style="--team-color: #B6BABD">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://inkbotdesign.com/wp-content/uploads/2024/07/Haas-F1-Team-logo-design-1024x683.webp"
+                                alt="Haas F1 Logo" class="logo-img">
+                        </span>
+                        <h3>Haas F1 Team</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> USA</p>
+                        <p><strong>Founded:</strong> 2016</p>
+                        <p><strong>Championships:</strong> 0</p>
+                        <p><strong>Titles:</strong> 0</p>
+                    </div>
+                    <div class="team-drivers">
+                        <span class="driver-badge" data-driver="esteban-ocon" data-name="Esteban Ocon"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/ocon"
+                            data-wins="1" data-poles="0" data-championships="0">Esteban Ocon</span>
+                        <span class="driver-badge" data-driver="oliver-bearman" data-name="Oliver Bearman"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/bearman"
+                            data-wins="0" data-poles="0" data-championships="0">Oliver Bearman</span>
+                    </div>
+                    <div class="driver-dropdown"></div>
+                </div>
+
+                <!-- Racing Bulls (VCARB) -->
+                <div class="team-card" style="--team-color: #6692FF">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://static.wikia.nocookie.net/logopedia/images/a/a7/Racing_Bulls.svg/revision/latest?cb=20240206041248"
+                                alt="Racing Bulls Logo" class="logo-img">
+                        </span>
+                        <h3>Racing Bulls</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> Italy</p>
+                        <p><strong>Founded:</strong> 2024</p>
+                        <p><strong>Championships:</strong> 0</p>
+                        <p><strong>Titles:</strong> 0</p>
+                    </div>
+                    <div class="team-drivers">
+                        <span class="driver-badge" data-driver="liam-lawson" data-name="Liam Lawson"
+                            data-image="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2024Drivers/lawson"
+                            data-wins="0" data-poles="0" data-championships="0">Liam Lawson</span>
+                        <span class="driver-badge" data-driver="arvid-lindblad" data-name="Arvid Lindblad"
+                            data-image="https://tse3.mm.bing.net/th/id/OIP.jicrWIrKlk-iFEy1hTfhBQHaE8?pid=Api&P=0&h=180"
+                            data-wins="0" data-poles="0" data-championships="0">Arvid Lindblad</span>
+                    </div>
+                    <div class="driver-dropdown"></div>
+                </div>
+
+                <!-- Williams Racing -->
+                <div class="team-card" style="--team-color: #00A0DE">
+                    <div class="team-header">
+                        <span class="team-logo">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.3DHRQ9kX-cCzc3NH5NVcPAHaHa?pid=Api&P=0&h=180"
+                                alt="Williams Racing Logo" class="logo-img">
+                        </span>
+                        <h3>Williams Racing</h3>
+                    </div>
+                    <div class="team-info">
+                        <p><strong>Country:</strong> United Kingdom</p>
+                        <p><strong>Founded:</strong> 1977</p>
+                        <p><strong>Championships:</strong> 9</p>
+                        <p><strong>Titles:</strong> 114</p>
+                    </div>
+                    <div class="team-drivers">
+                        <span class="driver-badge" data-driver="alex-albon" data-name="Alex Albon"
+                            data-image="https://media.formula1.com/content/dam/fom-website/drivers/2024Drivers/albon.jpg.img.1536.high.jpg"
+                            data-wins="0" data-poles="0" data-championships="0">Alex Albon</span>
+                        <span class="driver-badge" data-driver="carlos-sainz" data-name="Carlos Sainz"
+                            data-image="https://cdn-1.motorsport.com/images/mgl/2jXPqrg6/s800/carlos-sainz-williams.jpg"
+                            data-wins="4" data-poles="5" data-championships="0">Carlos Sainz</span>
+                    </div>
+                    <div class="driver-dropdown"></div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="section cars-section">
+        <div class="container">
+            <h2 class="section-title">2026 F1 Machines</h2>
+            <div class="cars-grid">
+                <!-- Ferrari -->
+                <div class="car-card">
+                    <div class="car-image red">
+                        <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/ferrari.png"
+                            alt="Ferrari SF-26">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>FRONT-WING LOAD: 420KG</span></div>
+                        <div class="tech-tag cockpit"><span>HYBRID ERS: ACTIVE</span></div>
+                        <div class="tech-tag rear"><span>DRS STATUS: READY</span></div>
+                    </div>
+                    <h4>Ferrari SF-26</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Ferrari 066/12</p>
+                        <p><strong>Chassis:</strong> Carbon-fibre composite</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+
+                <!-- Red Bull -->
+                <div class="car-card">
+                    <div class="car-image blue">
+                        <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/red-bull-racing.png"
+                            alt="Red Bull RB22">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>AERO BAL: 48% F</span></div>
+                        <div class="tech-tag cockpit"><span>ERS STATE: SOC 95%</span></div>
+                        <div class="tech-tag rear"><span>DIFF LOCK: 10%</span></div>
+                    </div>
+                    <h4>Red Bull RB22</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Red Bull Powertrains</p>
+                        <p><strong>Chassis:</strong> Carbon-fibre monocoque</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+
+                <!-- Mercedes -->
+                <div class="car-card">
+                    <div class="car-image silver">
+                        <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/mercedes.png"
+                            alt="Mercedes W17">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>TYRE TEMP: 95°C</span></div>
+                        <div class="tech-tag cockpit"><span>ICE TEMP: 102°C</span></div>
+                        <div class="tech-tag rear"><span>BRAKE BAL: 54%</span></div>
+                    </div>
+                    <h4>Mercedes W17</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Mercedes-AMG F1 M17</p>
+                        <p><strong>Chassis:</strong> Carbon-fibre composite</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+
+                <!-- McLaren -->
+                <div class="car-card">
+                    <div class="car-image orange">
+                        <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/mclaren.png"
+                            alt="McLaren MCL40">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>LOAD: 410KG</span></div>
+                        <div class="tech-tag cockpit"><span>FUEL: 85KG</span></div>
+                        <div class="tech-tag rear"><span>DRS: CLOSED</span></div>
+                    </div>
+                    <h4>McLaren MCL40</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Mercedes-AMG F1 M17</p>
+                        <p><strong>Chassis:</strong> Carbon-fibre composite</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+
+                <!-- Aston Martin -->
+                <div class="car-card">
+                    <div class="car-image green">
+                        <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/aston-martin.png"
+                            alt="Aston Martin AMR26">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>AERO BAL: 51%</span></div>
+                        <div class="tech-tag cockpit"><span>SOC: 98%</span></div>
+                        <div class="tech-tag rear"><span>DRS: ACTIVE</span></div>
+                    </div>
+                    <h4>Aston Martin AMR26</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Honda RBPT</p>
+                        <p><strong>Chassis:</strong> Carbon-fibre composite</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+
+                <!-- Alpine -->
+                <div class="car-card">
+                    <div class="car-image cyan">
+                        <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/alpine.png"
+                            alt="Alpine A526">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>LOAD: 405KG</span></div>
+                        <div class="tech-tag cockpit"><span>ERS: 100%</span></div>
+                        <div class="tech-tag rear"><span>DIFF: 15%</span></div>
+                    </div>
+                    <h4>Alpine A526</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Renault E-Tech RE26</p>
+                        <p><strong>Chassis:</strong> Carbon-fibre composite</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+
+                <!-- Cadillac -->
+                <div class="car-card">
+                    <div class="car-image gold">
+                        <img src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/common/f1/2026/fallback/car/2026fallbackcarright.webp"
+                            alt="Cadillac V-Series">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>AERO: 49% F</span></div>
+                        <div class="tech-tag cockpit"><span>ICE: 105°C</span></div>
+                        <div class="tech-tag rear"><span>DRS: READY</span></div>
+                    </div>
+                    <h4>Cadillac V-Series</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Cadillac V-Series F1</p>
+                        <p><strong>Chassis:</strong> Cadillac Carbon Monocoque</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+
+                <!-- Audi -->
+                <div class="car-card">
+                    <div class="car-image silver">
+                        <img src="https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/common/f1/2026/fallback/car/2026fallbackcarright.webp"
+                            alt="Audi R26 - 2026 Machine">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>QUATTRO-E: ON</span></div>
+                        <div class="tech-tag cockpit"><span>MGU-K: ACTIVE</span></div>
+                        <div class="tech-tag rear"><span>RECOV: 100%</span></div>
+                    </div>
+                    <h4>Audi R26</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Audi Formula Engine</p>
+                        <p><strong>Chassis:</strong> Audi Carbon Monocoque</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+
+                <!-- Racing Bulls -->
+                <div class="car-card">
+                    <div class="car-image blue">
+                        <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/rb.png"
+                            alt="VCARB 02">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>AERO: ACTIVE</span></div>
+                        <div class="tech-tag cockpit"><span>H-POWER: ON</span></div>
+                        <div class="tech-tag rear"><span>DIFF: 10%</span></div>
+                    </div>
+                    <h4>VCARB 02</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Honda RBPTH002</p>
+                        <p><strong>Chassis:</strong> VCARB Carbon Monocoque</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+
+                <!-- Williams -->
+                <div class="car-card">
+                    <div class="car-image blue">
+                        <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/williams.png"
+                            alt="Williams FW48">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>TYRE: 100°C</span></div>
+                        <div class="tech-tag cockpit"><span>DATA: SYNCED</span></div>
+                        <div class="tech-tag rear"><span>ERS: RECOV</span></div>
+                    </div>
+                    <h4>Williams FW48</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Mercedes-AMG F1 M17</p>
+                        <p><strong>Chassis:</strong> Williams Carbon Monocoque</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+
+                <!-- Haas -->
+                <div class="car-card">
+                    <div class="car-image white">
+                        <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/haas-f1-team.png"
+                            alt="Haas VF-26">
+                        <div class="scanner-line"></div>
+                        <div class="tech-tag nose"><span>AERO: LOADED</span></div>
+                        <div class="tech-tag cockpit"><span>ICE: STABLE</span></div>
+                        <div class="tech-tag rear"><span>DRS: READY</span></div>
+                    </div>
+                    <h4>Haas VF-26</h4>
+                    <div class="car-specs">
+                        <p><strong>Power Unit:</strong> Ferrari 066/12</p>
+                        <p><strong>Chassis:</strong> Haas Carbon Monocoque</p>
+                        <p><strong>Weight:</strong> 798 kg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pit Wall Telemetry Dashboard -->
+    <section id="telemetry" class="section telemetry-section">
+        <div class="container">
+            <h2 class="section-title">Pit Wall Live Telemetry</h2>
+            <div class="telemetry-dashboard">
+                <!-- Left Column: Critical Data -->
+                <div class="telemetry-column">
+                    <div class="telemetry-module gear-module">
+                        <div class="module-label">GEAR</div>
+                        <div id="liveGear" class="gear-value">7</div>
+                    </div>
+                    <div class="telemetry-module speed-module">
+                        <div class="module-label">SPEED (KM/H)</div>
+                        <div id="liveSpeed" class="speed-value">294</div>
+                    </div>
+                </div>
+
+                <!-- Center: RPM Graph and G-Force -->
+                <div class="telemetry-column main-display">
+                    <div class="telemetry-module rpm-module">
+                        <div class="module-label">RPM SPECTRUM</div>
+                        <div class="rpm-graph-container">
+                            <svg viewBox="0 0 400 100" class="rpm-svg">
+                                <path id="rpmPath" d="M0,80 Q50,80 100,80 T200,80 T300,80 T400,80" fill="none"
+                                    stroke="var(--primary)" stroke-width="3" />
+                                <div class="rpm-mask" id="rpmMask"></div>
+                            </svg>
+                            <div class="rpm-bars" id="rpmBars">
+                                <!-- Bars added via JS -->
+                            </div>
+                        </div>
+                        <div id="liveRPM" class="rpm-value">11,240</div>
+                    </div>
+                    <div class="g-force-container">
+                        <div class="telemetry-module gforce-module">
+                            <div class="module-label">LATERAL G-FORCE</div>
+                            <div class="g-circle">
+                                <div id="gDot" class="g-dot"></div>
+                                <div class="g-grid"></div>
+                            </div>
+                            <div id="liveG" class="g-value">3.4G</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: System Status -->
+                <div class="telemetry-column">
+                    <div class="telemetry-module tyre-module">
+                        <div class="module-label">TYRE RADIOMETRY (°C)</div>
+                        <div class="tyre-grid">
+                            <div class="tyre-status fl">
+                                <span>FL</span>
+                                <div id="tyreFL" class="tyre-temp">98</div>
+                            </div>
+                            <div class="tyre-status fr">
+                                <span>FR</span>
+                                <div id="tyreFR" class="tyre-temp">95</div>
+                            </div>
+                            <div class="tyre-status rl">
+                                <span>RL</span>
+                                <div id="tyreRL" class="tyre-temp">102</div>
+                            </div>
+                            <div class="tyre-status rr">
+                                <span>RR</span>
+                                <div id="tyreRR" class="tyre-temp">101</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="telemetry-module system-module">
+                        <div class="module-label">ERS HARVESTING</div>
+                        <div class="progress-container">
+                            <div id="ersProgress" class="progress-bar" style="width: 82%"></div>
+                        </div>
+                        <div class="module-label">BRAKE BIAS</div>
+                        <div class="progress-container">
+                            <div id="brakeProgress" class="progress-bar secondary" style="width: 54%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="telemetry-footer">
+                <div class="status-indicator">
+                    <span class="pulse-dot"></span>
+                    UP-LINK ACTIVE: SECURE_CORE_7
+                </div>
+                <div id="telemetryDriver" class="driver-name-display">CH. LECLERC | LAP 42/58</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="section stats-section">
+        <div class="container">
+            <h2 class="section-title">All-Time Records</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">103</div>
+                    <p class="stat-desc">Most Wins (Lewis Hamilton)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">103</div>
+                    <p class="stat-desc">Most Pole Positions (Lewis Hamilton)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <p class="stat-desc">Most World Championships (Lewis Hamilton)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">313</div>
+                    <p class="stat-desc">Total Races (As of 2025)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">78</div>
+                    <p class="stat-desc">Seasons (1950-2026)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">20</div>
+                    <p class="stat-desc">Active F1 Teams (2026)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan ID Generator Section -->
+    <section id="fan-id" class="section fan-id-section">
+        <div class="container">
+            <h2 class="section-title">Official Paddock Pass</h2>
+            <p class="section-subtitle">Join the grid for the 2026 season. Generate your personalized digital paddock
+                pass.</p>
+
+            <div class="fan-id-container">
+                <!-- Form Side -->
+                <div class="fan-id-form">
+                    <div class="form-group">
+                        <label for="fanName">Enter Your Name</label>
+                        <input type="text" id="fanName" placeholder="e.g. Lewis Hamilton" maxlength="20">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Your Team</label>
+                        <div class="team-selector-grid">
+                            <label class="team-option" style="--t-color: #e8003d">
+                                <input type="radio" name="fanTeam" value="Ferrari" checked>
+                                <span class="team-dot"></span> Ferrari
+                            </label>
+                            <label class="team-option" style="--t-color: #1e3050">
+                                <input type="radio" name="fanTeam" value="Red Bull">
+                                <span class="team-dot"></span> Red Bull
+                            </label>
+                            <label class="team-option" style="--t-color: #00d4be">
+                                <input type="radio" name="fanTeam" value="Mercedes">
+                                <span class="team-dot"></span> Mercedes
+                            </label>
+                            <label class="team-option" style="--t-color: #ff8700">
+                                <input type="radio" name="fanTeam" value="McLaren">
+                                <span class="team-dot"></span> McLaren
+                            </label>
+                            <label class="team-option" style="--t-color: #C3002F">
+                                <input type="radio" name="fanTeam" value="Audi">
+                                <span class="team-dot"></span> Audi
+                            </label>
+                            <label class="team-option" style="--t-color: #006f62">
+                                <input type="radio" name="fanTeam" value="Aston Martin">
+                                <span class="team-dot"></span> Aston Martin
+                            </label>
+                            <label class="team-option" style="--t-color: #D4AF37">
+                                <input type="radio" name="fanTeam" value="Cadillac">
+                                <span class="team-dot"></span> Cadillac
+                            </label>
+                            <label class="team-option" style="--t-color: #00A0DE">
+                                <input type="radio" name="fanTeam" value="Williams">
+                                <span class="team-dot"></span> Williams
+                            </label>
+                        </div>
+                    </div>
+
+                    <button id="generatePassBtn" class="btn btn-hero" style="width: 100%;">Claim My Pass</button>
+                </div>
+
+                <!-- Preview Side -->
+                <div class="fan-id-preview">
+                    <div id="paddockPass" class="paddock-pass" style="--pass-color: #e8003d">
+                        <div class="pass-hologram"></div>
+                        <div class="pass-glint"></div>
+                        <div class="pass-header">
+                            <div class="pass-f1-logo">F1</div>
+                            <div class="pass-type">PADDOCK PASS</div>
+                        </div>
+
+                        <div class="pass-body">
+                            <div class="pass-info">
+                                <div class="pass-label">HOLDER</div>
+                                <div id="displayFanName" class="pass-value">CHAMPION</div>
+
+                                <div class="pass-label">TEAM</div>
+                                <div id="displayFanTeam" class="pass-value">SCUDERIA FERRARI</div>
+
+                                <div class="pass-label">LEVEL</div>
+                                <div class="pass-value">PLATINUM ACCESS</div>
+                            </div>
+
+                            <div class="pass-visual">
+                                <div class="pass-avatar" id="passAvatar">FP</div>
+                                <div class="pass-team-logo" id="passTeamLogo">
+                                    <img src="https://logos-world.net/wp-content/uploads/2020/07/Ferrari-Scuderia-Logo-700x394.png"
+                                        alt="Team">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pass-footer">
+                            <div class="pass-year">SEASON 2026</div>
+                            <div class="pass-barcode">
+                                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>F1 Racing</h4>
+                    <p>The pinnacle of motorsport excellence since 1950</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#teams">Teams</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#cars">Cars</a></li>
+
+                        <li><a href="#stats">Statistics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Follow Us</h5>
+                    <ul>
+                        <li><a href="https://twitter.com/F1">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/f1/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@Formula1">YouTube</a></li>
+                        <li><a href="https://www.facebook.com/Formula1/">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 F1 Racing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Race Engineer Assistant -->
+    <div class="race-engineer-container" id="engineerUI">
+        <div class="engineer-bubble" id="engineerBubble">
+            <div class="bubble-header">
+                <span class="radio-status">LIVE RADIO</span>
+                <span class="radio-waves"><span></span><span></span><span></span></span>
+            </div>
+            <p id="engineerMessage">Copy that, we're monitoring the data.</p>
+            <div class="chat-input-container">
+                <input type="text" id="engineerInput" placeholder="Ask your Race Engineer..." autocomplete="off">
+                <button id="sendEngineerBtn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <button class="engineer-btn" id="engineerBtn" aria-label="Talk to Race Engineer">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                    fill="white" />
+                <path
+                    d="M12 17C14.76 17 17 14.76 17 12C17 9.24 14.76 7 12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17ZM12 9C13.66 9 15 10.34 15 12C15 13.66 13.66 15 12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9Z"
+                    fill="white" />
+                <path
+                    d="M12 11C11.45 11 11 11.45 11 12C11 12.55 11.45 13 12 13C12.55 13 13 12.55 13 12C13 11.45 12.55 11 12 11Z"
+                    fill="white" />
+            </svg>
+            <div class="btn-glow"></div>
+        </button>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        // Modal Logic for Track Images
+        let openTrackModal;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const modal = document.getElementById('trackModal');
+            const modalImg = document.getElementById('modalTrackImage');
+            const modalName = document.getElementById('modalTrackName');
+            const statLength = document.getElementById('statLength');
+            const statLaps = document.getElementById('statLaps');
+            const statDistance = document.getElementById('statDistance');
+            const statRecord = document.getElementById('statRecord');
+            const closeBtn = document.querySelector('.close-modal');
+            const cards = document.querySelectorAll('.schedule-card');
+
+            openTrackModal = function (data) {
+                modal.style.display = "flex";
+                modalImg.src = data.image;
+                modalName.textContent = data.name;
+                statLength.textContent = data.length || 'TBC';
+                statLaps.textContent = data.laps || 'TBC';
+                statDistance.textContent = data.distance || 'TBC';
+                statRecord.textContent = data.record || 'TBC';
+            };
+
+            cards.forEach(card => {
+                card.addEventListener('click', function () {
+                    const data = {
+                        image: this.getAttribute('data-track-image'),
+                        name: this.getAttribute('data-track-name'),
+                        length: this.getAttribute('data-track-length'),
+                        laps: this.getAttribute('data-track-laps'),
+                        distance: this.getAttribute('data-track-distance'),
+                        record: this.getAttribute('data-track-record')
+                    };
+                    openTrackModal(data);
+                });
+            });
+
+            closeBtn.addEventListener('click', function () {
+                modal.style.display = "none";
+            });
+
+            window.addEventListener('click', function (e) {
+                if (e.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
